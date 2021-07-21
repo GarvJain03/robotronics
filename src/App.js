@@ -1,9 +1,12 @@
-// import React from "react";
+import React from "react";
+import Teacher from "./components/Teacher";
 
-// function App() {
-//   return (
-//     <h1 className="text-4xl font-bold">Hello World!</h1>
-//   );
-// }
+function App() {
+  return (
+    <div>
+      <Teacher />
+    </div>
+  );
+}
 
-// export default App;
+export default App;
