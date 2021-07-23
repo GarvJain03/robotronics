@@ -1,19 +1,19 @@
-import React, { useCallback } from "react";
-import { withRouter } from "react-router";
+import React, { useCallback, useContext } from "react";
+import { withRouter, Redirect } from "react-router";
 import app from "../../base";
-import Nav from "../../components/Nav";
-import Footer from "../../components/Footer";
-import { Link } from "react-router-dom";
+import { AuthContext } from "../../services/Auth";
+import Nav from "../Nav";
+import Footer from "../Footer";
 
-const Student = ({ history }) => {
-  const handleSignUp = useCallback(
+const Login = ({ history }) => {
+  const handleLogin = useCallback(
     async (event) => {
       event.preventDefault();
       const { email, password } = event.target.elements;
       try {
         await app
           .auth()
-          .createUserWithEmailAndPassword(email.value, password.value);
+          .signInWithEmailAndPassword(email.value, password.value);
         history.push("/");
       } catch (error) {
         alert(error);
@@ -22,26 +22,22 @@ const Student = ({ history }) => {
     [history]
   );
 
+  const currentUser = useContext(AuthContext);
+
+  if (currentUser) {
+    return <Redirect to="/" />;
+  }
+
   return (
     <div>
       <Nav />
-      <h1>Sign up</h1>
-      <form onSubmit={handleSignUp}>
+      <form onSubmit={handleLogin}>
         <section className="text-gray-600 body-font relative">
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-col text-center w-full mb-12">
               <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-                Register
+                Login
               </h1>
-              <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                Already a member?{" "}
-                <Link
-                  to="/login"
-                  style={{ textDecoration: "underline", color: "blue" }}
-                >
-                  Login
-                </Link>
-              </p>
             </div>
             <div className="lg:w-1/2 md:w-2/3 mx-auto">
               <div className="flex flex-wrap -m-2">
@@ -79,10 +75,9 @@ const Student = ({ history }) => {
                     />
                   </div>
                 </div>
-
                 <div className="p-2 w-full">
                   <button className="flex mx-auto text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">
-                    Register
+                    Login
                   </button>
                 </div>
               </div>
@@ -90,10 +85,9 @@ const Student = ({ history }) => {
           </div>
         </section>
       </form>
-
       <Footer />
     </div>
   );
 };
 
-export default withRouter(Student);
+export default withRouter(Login);
