@@ -6,7 +6,6 @@ function Student() {
   return (
     <div>
       <ChatApp />
-      <Footer />
     </div>
   );
 }

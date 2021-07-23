@@ -1,5 +1,7 @@
 import React from "react";
 import Saksham from "./../../assets/main_compress.jpg";
+import Garv from "./../../assets/Garv.jpg";
+import Aaa from "./../../assets/aaa.png";
 
 function Team() {
   return (
@@ -29,8 +31,8 @@ function Team() {
                 </h2>
                 <h3 class="text-gray-500 mb-3">Developer</h3>
                 <p class="mb-4">
-                  DIY tote bag drinking vinegar cronut adaptogen squid fanny
-                  pack vaporware.
+                  I am Saksham Raheja, a high school student from Delhi. I am
+                  passionate about web development and music.
                 </p>
                 <span class="inline-flex">
                   <a class="text-gray-500">
@@ -81,7 +83,7 @@ function Team() {
               <img
                 alt="team"
                 class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
-                src={Saksham}
+                src={Garv}
               />
               <div class="flex-grow sm:pl-8">
                 <h2 class="title-font font-medium text-lg text-gray-900">
@@ -89,8 +91,8 @@ function Team() {
                 </h2>
                 <h3 class="text-gray-500 mb-3">Developer</h3>
                 <p class="mb-4">
-                  DIY tote bag drinking vinegar cronut adaptogen squid fanny
-                  pack vaporware.
+                  I am Garv Jain, a high school student from Delhi. I am
+                  passionate about web development and designing.
                 </p>
                 <span class="inline-flex">
                   <a class="text-gray-500">
@@ -141,7 +143,7 @@ function Team() {
               <img
                 alt="team"
                 class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
-                src={Saksham}
+                src={Aaa}
               />
               <div class="flex-grow sm:pl-8">
                 <h2 class="title-font font-medium text-lg text-gray-900">
@@ -149,8 +151,8 @@ function Team() {
                 </h2>
                 <h3 class="text-gray-500 mb-3">Ideator</h3>
                 <p class="mb-4">
-                  DIY tote bag drinking vinegar cronut adaptogen squid fanny
-                  pack vaporware.
+                  I am Aaahana Mehrotra, a high school student from Delhi. I am
+                  passionate about computer science.
                 </p>
                 <span class="inline-flex">
                   <a class="text-gray-500">

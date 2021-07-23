@@ -39,8 +39,8 @@ function Mission() {
                   Free Quality Education
                 </h2>
                 <p class="leading-relaxed text-base">
-                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine.
+                  Classcord is a not for profit platform for individuals to
+                  procure education.
                 </p>
                 {/* <a class="mt-3 text-green-500 inline-flex items-center">
                   Learn More
@@ -79,8 +79,8 @@ function Mission() {
                   Oppurtunity for Each and Every student
                 </h2>
                 <p class="leading-relaxed text-base">
-                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine.
+                  Everyone, irrespective of their background or financial
+                  status, will have the ability to collaborate and learn.
                 </p>
                 {/* <a class="mt-3 text-green-500 inline-flex items-center">
                   Learn More
@@ -118,8 +118,7 @@ function Mission() {
                   Solve Problems by Understanding the Problems
                 </h2>
                 <p class="leading-relaxed text-base">
-                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine.
+                  Get your doubts solved for any problem.
                 </p>
                 {/* <a class="mt-3 text-green-500 inline-flex items-center">
                   Learn More

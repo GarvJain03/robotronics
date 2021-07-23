@@ -2,6 +2,7 @@ import React, { useCallback } from "react";
 import app from "../../base";
 import { Link } from "react-router-dom";
 import Nav from "../Nav";
+import Footer from "../Footer";
 
 const SignUp = ({ history }) => {
   const handleSignUp = useCallback(
@@ -22,7 +23,7 @@ const SignUp = ({ history }) => {
   return (
     <div>
       <Nav />
-      <form onSubmit={handleSignUp}>
+      <form onSubmit={handleSignUp} style={{ minHeight: "75vh" }}>
         <section className="text-gray-600 body-font relative">
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-col text-center w-full mb-12">
@@ -86,6 +87,7 @@ const SignUp = ({ history }) => {
           </div>
         </section>
       </form>
+      <Footer />
     </div>
   );
 };
