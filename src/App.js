@@ -4,7 +4,7 @@ import Student from "./components/pages/Student";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 // import { Chat } from "./components/MainApp/Chat";
-import { ChatApp } from "./components/MainApp/ChatApp";
+// import { ChatApp } from "./components/MainApp/ChatApp";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/student" exact component={ChatApp} />
+          <Route path="/student" exact component={Student} />
         </Switch>
       </BrowserRouter>
     </div>
