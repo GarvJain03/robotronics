@@ -1,9 +1,7 @@
 import React, { useCallback } from "react";
-import { withRouter } from "react-router";
 import app from "../../base";
-import Nav from "../../components/Nav";
-import Footer from "../../components/Footer";
 import { Link } from "react-router-dom";
+import Nav from "../Nav";
 
 const SignUp = ({ history }) => {
   const handleSignUp = useCallback(
@@ -14,7 +12,7 @@ const SignUp = ({ history }) => {
         await app
           .auth()
           .createUserWithEmailAndPassword(email.value, password.value);
-        history.push("/");
+        history.push("/student");
       } catch (error) {
         alert(error);
       }
@@ -23,7 +21,7 @@ const SignUp = ({ history }) => {
   );
   return (
     <div>
-      <h1>Sign up</h1>
+      <Nav />
       <form onSubmit={handleSignUp}>
         <section className="text-gray-600 body-font relative">
           <div className="container px-5 py-24 mx-auto">

@@ -59,9 +59,9 @@ function Nav() {
             </svg>
           </button>
         </Link>
-        <Link to="/student">
+        <Link to="/login">
           <button class="inline-flex items-center bg-green-100 border-0 py-1 px-3 focus:outline-none hover:bg-green-200 rounded text-base mt-4 md:mt-0 mr-5">
-            Student
+            Login
             <svg
               fill="none"
               stroke="currentColor"
@@ -75,9 +75,9 @@ function Nav() {
             </svg>
           </button>
         </Link>
-        <Link to="/teacher">
+        <Link to="/signup">
           <button class="inline-flex items-center bg-green-100 border-0 py-1 px-3 focus:outline-none hover:bg-green-200 rounded text-base mt-4 md:mt-0 ">
-            Teacher
+            Sign Up
             <svg
               fill="none"
               stroke="currentColor"

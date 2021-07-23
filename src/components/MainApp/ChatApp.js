@@ -6,6 +6,8 @@ import "firebase/firestore";
 import "firebase/auth";
 import "firebase/analytics";
 
+import { useHistory } from "react-router-dom";
+
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import Nav from "./Nav";
@@ -78,12 +80,15 @@ function SignIn() {
     </div>
   );
 }
-
 function SignOut() {
+  let history = useHistory();
   return (
     auth.currentUser && (
       <button
-        onClick={() => auth.signOut()}
+        onClick={() => {
+          auth.signOut();
+          history.push("/login");
+        }}
         class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
       >
         Sign Out

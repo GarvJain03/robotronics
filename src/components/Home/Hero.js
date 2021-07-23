@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Banner from "./../../assets/undraw_education_f8ru.svg";
 function Hero() {
   return (
@@ -29,12 +30,16 @@ function Hero() {
             get free access to education by our volunteers.
           </p>
           <div class="flex justify-center">
-            <button class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
-              Student
-            </button>
-            <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-              Teacher
-            </button>
+            <Link to="/login">
+              <button class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
+                Login
+              </button>
+            </Link>
+            <Link to="/signup">
+              <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+                Sign Up
+              </button>
+            </Link>
           </div>
         </div>
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">

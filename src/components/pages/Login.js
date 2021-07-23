@@ -14,7 +14,7 @@ const Login = ({ history }) => {
         await app
           .auth()
           .signInWithEmailAndPassword(email.value, password.value);
-        history.push("/");
+        history.push("/student");
       } catch (error) {
         alert(error);
       }
@@ -25,7 +25,7 @@ const Login = ({ history }) => {
   const currentUser = useContext(AuthContext);
 
   if (currentUser) {
-    return <Redirect to="/" />;
+    return <Redirect to="/student" />;
   }
 
   return (

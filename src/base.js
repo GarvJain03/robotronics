@@ -1,13 +1,17 @@
-import firebase from "firebase";
+import firebase from "firebase/app";
 
-const app = firebase.initializeApp({
-  apiKey: "AIzaSyCOXlYU5YdTwMwJRjx-0L1J-NeFdCYuyq8",
-  authDomain: "classcord-78e58.firebaseapp.com",
-  projectId: "classcord-78e58",
-  storageBucket: "classcord-78e58.appspot.com",
-  messagingSenderId: "150630714054",
-  appId: "1:150630714054:web:282d18e0388ecbac6865c7",
-  measurementId: "G-C0K078Y935",
-});
+if (!firebase.apps.length) {
+  firebase.initializeApp({
+    apiKey: "AIzaSyBH02KvcuIyzBojrP0z52m8rpYBQR_73Hg",
+    authDomain: "robotronics-2021.firebaseapp.com",
+    projectId: "robotronics-2021",
+    storageBucket: "robotronics-2021.appspot.com",
+    messagingSenderId: "513144849351",
+    appId: "1:513144849351:web:5c7daedf925bc7cf298fe2",
+    measurementId: "G-94RG6578RS",
+  });
+} else {
+  firebase.app(); // if already initialized, use that one
+}
 
-export default app;
+export default firebase;
