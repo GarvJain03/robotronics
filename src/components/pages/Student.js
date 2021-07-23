@@ -8,8 +8,9 @@ function Student() {
     <div>
       <ChatApp />
       <Announcements />
+      <Footer />
     </div>
   );
 }
 
-export default Student;
+export default withRouter(Student);
