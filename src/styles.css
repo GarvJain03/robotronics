@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+.saksham-white {
+  text-underline-offset: 3px;
+  text-decoration-color: white;
+}

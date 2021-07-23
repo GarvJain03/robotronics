@@ -1,10 +1,10 @@
 import React from "react";
-import Teacher from "./components/Teacher";
+import Home from "./components/pages/Home";
 
 function App() {
   return (
     <div>
-      <Teacher />
+      <Home />
     </div>
   );
 }
