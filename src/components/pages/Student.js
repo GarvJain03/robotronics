@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useCallback } from "react";
 import { withRouter } from "react-router";
 import app from "../../base";
@@ -21,10 +22,15 @@ const Student = ({ history }) => {
     },
     [history]
   );
+=======
+import React from "react";
+import Nav from "../MainApp/Nav";
+>>>>>>> 019764be30e83e8cec0b5f675ed2b289a41c1c5c
 
   return (
     <div>
       <Nav />
+<<<<<<< HEAD
       <h1>Sign up</h1>
       <form onSubmit={handleSignUp}>
         <section className="text-gray-600 body-font relative">
@@ -92,6 +98,8 @@ const Student = ({ history }) => {
       </form>
 
       <Footer />
+=======
+>>>>>>> 019764be30e83e8cec0b5f675ed2b289a41c1c5c
     </div>
   );
 };
